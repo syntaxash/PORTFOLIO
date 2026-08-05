@@ -39,8 +39,7 @@ document.addEventListener("keydown", (event) => {
         });
     }
     //page switch
-    else if (event.key === 'e' ||
-        event.key === 'E' && overlapping == true) {
+    else if ( (event.key === 'e' || event.key === 'E') && overlapping === true) {
         window.loaction.href = 'laboratory.html';
     }
 
@@ -48,8 +47,8 @@ document.addEventListener("keydown", (event) => {
 
 //cheecking overlap
 
-let box1 = character.getBoundingClientReact();
-let box2 = laboratory.getBoundingClientReact();
+let box1 = character.getBoundingClientRect();
+let box2 = laboratory.getBoundingClientRect();
 
 let overlapping = false;
 
